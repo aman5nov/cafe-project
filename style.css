@@ -1,0 +1,124 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+ background: center center url('image/coffee3.jpg'); 
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    
+}
+.row{
+   max-width: 1180px;
+   margin: auto;
+
+}
+.logo{
+    height: 120px;
+    width: auto;
+   float: left;
+    margin-top: 20px;
+    margin-left: -100px;
+    background-color: transparent;
+    
+}
+.main-nav{
+    float: right;
+    margin-top: 60px;
+}
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+}
+.main-nav li a{
+    padding: 5px,opx;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+
+.main-nav li a:hover{
+    border-bottom: solid #bf55ec;
+}
+.main-content{
+    width: 1180px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+    
+}
+/* body{
+    overflow-x: auto;
+    font-family: cursive;
+} */
+h1{
+    color: #fff;
+    font-size: 35px;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    font-weight: lighter;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    margin-right:40px;
+    font-weight: lighter;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2,border 0.2, color 0.2;
+}
+.btn-full{
+    background-color: transparent;
+    color: #bf55ec;
+    margin-top: 15px;
+    border: 1px solid #bf55ec;
+}
+.btn-full:hover{
+    background-color: #fff;
+
+}
+.btn-main{
+    background-color: transparent;
+    color: #fff;
+    border: solid #fff;
+}
+.btn-main:hover{
+    background-color: #bf55ec;
+}
+.colorchange{
+    animation: cafe 1s infinite;
+}
+@keyframes cafe{
+    0%{color: red;}
+    25%{color: #bf55ec;}
+    50%{color: yellow;}
+    75%{color: orange;}
+    100%{color: #bf55ec;}
+}
+@media only screen and (max-width: 1180px){
+    .main-content{
+width: 100%;
+padding: 0 2%;
+    }
+}
+@media only screen and (max-width: 990px)
+{
+    h1{font-size: 200%;} 
+}
+@media only screen and (max-width: 768px){
+    h1{font-size: 160%;}
+
+.main-nav{display: none;}
+}
+
+
+
+
+
+
